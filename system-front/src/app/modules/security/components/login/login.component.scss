@@ -1,0 +1,54 @@
+.outer{
+  font-family: Arial, sans-serif;
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0zNzNiYXRjaDE1LXJtMjA4LTA0LmpwZw.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+.font{
+  font-size: 14px;
+  color:#636e72;
+}
+
+.form-control-custom {
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 14px;
+  color: #848788;
+}
+
+
+.btn-custom-register {
+  background-color: #0984e3;
+  border-color: #0984e3;
+  color: white;
+}
+
+.btn-custom-register:hover {
+  background-color: #047ed8;
+  border-color: #047ed8;
+}
+
+.btn-custom-login{
+  background-color: #fd79a8;
+  border-color: #fd79a8;
+  color: white;
+}
+.btn-custom-login:hover{
+  background-color: #e84393;
+  border-color: #e84393;
+}
+
+.text-danger{
+  color: #047ed8;
+  font-size: 14px;
+}
+

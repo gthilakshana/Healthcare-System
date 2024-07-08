@@ -1,0 +1,58 @@
+<div class="outer">
+  <form style="width: 100%;" [formGroup]="form" (ngSubmit)="signup()">
+    <div class="container col-8 col-sm-7 col-md-6 col-lg-3" style="background-color: #f0f2f5; border-radius: 4px;">
+      <div class="row">
+        <div class="col-12">
+          <br>
+          <h2>Signup</h2>
+          <hr>
+        </div>
+        <div class="col-12">
+          <div *ngIf="errorMessage" class="col-12 alert alert-danger">
+            {{ errorMessage }}
+          </div>
+        </div>
+
+        <div class="col-12">
+         <div *ngIf="successMessage" class="col-12 alert alert-success">
+           {{ successMessage }}
+         </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <label class="font" for="fullName">Full Name</label>
+            <input formControlName="fullName" type="text" id="fullName" class="form-control form-control-custom" autocomplete="off">
+            <div *ngIf="form.get('fullName')?.invalid && form.get('fullName')?.touched" class="text-danger">
+              Full Name is required.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <label class="font" for="username">Email</label>
+            <input formControlName="email" type="email" id="username" class="form-control form-control-custom" autocomplete="email">
+            <div *ngIf="form.get('email')?.invalid && form.get('email')?.touched" class="text-danger">
+              Please enter a valid email.
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="form-group">
+            <label class="font" for="password">Password</label>
+            <input formControlName="password" type="password" id="password" class="form-control form-control-custom" autocomplete="new-password">
+            <div *ngIf="form.get('password')?.invalid && form.get('password')?.touched" class="text-danger">
+              Password is required.
+            </div>
+          </div>
+        </div>
+        <div class="col-12" style="margin-top: 20px;">
+          <button class="btn btn-custom-register col-12" [disabled]="form.invalid" type="submit">Register</button>
+        </div>
+        <div class="col-12" style="margin-top: 10px; margin-bottom: 40px;">
+          <a routerLink="/security/login" class="btn btn-custom-login col-12">Already have an Account</a>
+        </div>
+        <br>
+      </div>
+    </div>
+  </form>
+</div>

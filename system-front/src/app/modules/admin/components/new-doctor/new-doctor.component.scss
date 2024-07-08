@@ -1,0 +1,55 @@
+.outer{
+  font-family: Arial, sans-serif;
+  background-image: url("https://images.pexels.com/photos/40568/medical-appointment-doctor-healthcare-40568.jpeg?cs=srgb&dl=pexels-pixabay-40568.jpg&fm=jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+}
+.font{
+  font-size: 14px;
+  color:#636e72;
+}
+
+.container{
+  background-color: #ffffff;
+  border-radius: 4px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-control-custom {
+  background-color: #ffffff;
+  border: 1px solid #ced6e0;
+  border-radius: 4px;
+  padding: 7px;
+  font-size: 14px;
+  color: #848788;
+}
+
+
+.btn-custom-doctor{
+  background-color: #fd79a8;
+  border-color: #fd79a8;
+  color: white;
+}
+.btn-custom-doctor:hover{
+  background-color: #e84393;
+  border-color: #e84393;
+}
+.img{
+  width: 100%;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://www.canadaqbank.com/blog/storage/2024/03/How-can-International-Medical-Students-and-Doctors-Practice-in-the-US.jpg");
+
+}
+
+
+

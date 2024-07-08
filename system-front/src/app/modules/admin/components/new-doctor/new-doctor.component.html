@@ -1,0 +1,36 @@
+<div class="outer">
+  <form style="width: 100%;" [formGroup]="form" (ngSubmit)="saveDoctor()">
+    <div class="container col-8 col-sm-7 col-md-6 col-lg-3">
+      <br>
+      <div class="img col-12">
+
+      </div>
+      <div class="col-12">
+        <div class="form-group" style="margin-top: 20px">
+          <input class="form-control form-control-custom" type="text" placeholder="Name" formControlName="name">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group" style="margin-top: 10px">
+          <input class="form-control form-control-custom" type="text" placeholder="Contact" formControlName="contact">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group" style="margin-top: 10px">
+          <input class="form-control form-control-custom" type="text" placeholder="Address" formControlName="address">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group" style="margin-top: 10px">
+          <input class="form-control form-control-custom" type="text" placeholder="Salary" formControlName="salary">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-group" style="margin-top: 20px;">
+          <button type="submit" class="btn btn-custom-doctor col-12">Save Doctor</button>
+        </div>
+      </div>
+      <br>
+    </div>
+  </form>
+</div>
